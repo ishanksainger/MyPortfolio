@@ -95,15 +95,7 @@
   transition: all 0.4s;
   z-index: 1;
 }
-.imageSet:hover::before {
-  transform: scaleX(1);
-}
-.imageSet:hover .flex-col {
-  transform: scale(1.1);
-}
-.imageSet:hover .project-number {
-  display: block;
-}
+
 .skillHighlight{
   color: cadetblue;
   font-weight: bolder;
@@ -133,5 +125,16 @@
   }
   .normal{
     font-size: 25px;
+  }
+}
+@media (min-width: 385px) {
+  .imageSet:hover::before {
+    transform: scaleX(1);
+  }
+  .imageSet:hover .flex-col {
+    transform: scale(1.1);
+  }
+  .imageSet:hover .project-number {
+    display: block;
   }
 }

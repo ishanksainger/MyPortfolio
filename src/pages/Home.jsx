@@ -92,14 +92,17 @@ const Home = () => {
             {/* content inside first section */}
             <div className="flex lg:mt-10 md:p-10 sm:p-7 p-4  lg:mb-40 flex-col lg:flex-row gap-10 lg:gap-5">
               <div className="lg:w-[50%] w-fit flex flex-col gap-10 justify-center  items-center text-4xl mx-auto order-2 lg:order-1">
-                <div className="w-full ">
+                <div className="w-full text-3xl md:text-5xl">
                   I am a <span className="role text-[#01B7D6]"></span>
                 </div>
 
-                <p className=" md:text-justify">
+                <div className="w-full flex justify-start">
+                <p className=" md:text-2xl text-2xl text-justify w-full lg:w-[70%]">
                   I’m a software developer and here is my portfolio website.
-                  Here you’ll learn about my journey as a software developer.
+                  Here you’ll learn about my journey and projects that I have
+                  worked on.
                 </p>
+                </div>
                 {/* buttons */}
                 <div className="flex flex-col md:flex-row gap-5 md:gap-10 w-full md:justify-start">
                   <ActiveBtn
