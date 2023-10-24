@@ -54,7 +54,7 @@ const NavBar = () => {
             <li onClick={() => handleButtonClick("Contact")}>
               <ActiveBtn
                 btnText="Contact"
-                activeClass={activeButton === "Contact Me" ? "activeClass" : ""}
+                activeClass={activeButton === "Contact" ? "activeClass" : ""}
               />
             </li>
           </ul>
@@ -89,10 +89,10 @@ const NavBar = () => {
               activeClass={activeButton === "Skills" ? "activeClass" : ""}
             />
           </li>
-          <li onClick={() => handleButtonClick("Contact Me")}>
+          <li onClick={() => handleButtonClick("Contact")}>
             <ActiveBtn
               btnText="Contact"
-              activeClass={activeButton === "Contact Me" ? "activeClass" : ""}
+              activeClass={activeButton === "Contact" ? "activeClass" : ""}
             />
           </li>
         </ul>
