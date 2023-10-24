@@ -36,3 +36,102 @@
     transform: rotate(360deg);
   }
 }
+
+.activeClass {
+  background-image: linear-gradient(
+    to right,
+    #4776e6 0%,
+    #8e54e9 51%,
+    #4776e6 100%
+  );
+  padding: 5px 19px;
+  text-align: center;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  font-size: 30px;
+}
+
+.activeClass:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+.normal {
+  border-radius: 10px;
+  padding: 5px 19px;
+  border: 1px solid;
+  border-color: #4827c1;
+}
+.imageSet {
+  width: 90%;
+  height: 550px;
+  background-repeat: no-repeat;
+  background-size: cover; /* Try "contain" to fit the image within the container */
+  position: relative;
+  box-shadow: 0px 0px 40px #1f1f1f;
+}
+.imageSet::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  left: 0;
+  background-color: #1f1f1f9a;
+  z-index: 0;
+}
+.imageSet::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  left: 0;
+  background: linear-gradient(45deg, #343d68, #343d68be, #343d687c);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 0.4s;
+  z-index: 1;
+}
+.imageSet:hover::before {
+  transform: scaleX(1);
+}
+.imageSet:hover .flex-col {
+  transform: scale(1.1);
+}
+.imageSet:hover .project-number {
+  display: block;
+}
+.skillHighlight{
+  color: cadetblue;
+  font-weight: bolder;
+}
+.mobile-menu-animation {
+  animation: mobileMenuAnimation 600ms ease forwards;
+}
+
+@keyframes mobileMenuAnimation {
+  from {
+    transform: translateY(-10%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1280px) {
+  .imageSet {
+    width: 100%;
+    background-size: 100% 100%;
+  }
+  .activeClass{
+    font-size: 25px;
+  }
+  .normal{
+    font-size: 25px;
+  }
+}
