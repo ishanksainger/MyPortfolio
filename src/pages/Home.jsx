@@ -59,7 +59,7 @@ const Home = () => {
   };
 
   const downloadResume = () => {
-    // Construct the URL to the resume file
+    // Construct the URL to  resume file
     const resumeURL = `${process.env.PUBLIC_URL}/Deedy_CV.pdf`;
 
     // Create a temporary anchor element
